@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(powershell -Command \"Get-ChildItem -Path C:\\\\Etsy -Force | Select-Object Mode,Length,Name\")",
-      "Bash(python *)"
-    ]
-  }
-}
