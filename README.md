@@ -8,18 +8,34 @@ them into Optuna-optimized weighted ensembles. The best validation **F1 score is
 
 ---
 
-## Project contents
+## Repository layout
+
+```
+.
+├── README.md
+├── notebooks/
+│   └── Etsy_final.ipynb                      # Main pipeline notebook
+├── reports/
+│   └── Etsy_AI_Image_Detection_Analysis.pdf  # Exported analysis report
+└── figures/
+    ├── comparison_model.png                  # F1 comparison across models/ensembles
+    ├── confusion_matrix.png                  # Best ensemble, validation set
+    ├── tsne_plot.png                         # t-SNE of intermediate-CLIP features
+    ├── fft_comparison.png                    # FFT: authentic vs AI
+    ├── ela_plot.png                          # Error Level Analysis: authentic vs AI
+    └── model_confidence_analysis.png         # Ensemble confidence distribution
+```
 
 | File | Description |
 |------|-------------|
-| `Etsy_final.ipynb` | Main notebook — full pipeline (data prep → models → ensembles → submission). |
-| `Etsy_AI_Image_Detection_Analysis.pdf` | Exported report of the analysis. |
-| `Comaprison_model.png` | Bar chart comparing F1 of every model and ensemble. |
-| `Confusion_matrix.png` | Confusion matrix of the best ensemble on the validation set. |
-| `t-SNE_plot.png` | t-SNE projection of intermediate-CLIP features (class separability). |
-| `fft_comparison.png` | Frequency-domain (FFT) comparison of authentic vs AI images. |
-| `ELA_plot.png` | Error Level Analysis visualization of authentic vs AI images. |
-| `model_confidence_analysis.png` | Prediction-confidence distribution of the ensemble. |
+| `notebooks/Etsy_final.ipynb` | Main notebook — full pipeline (data prep → models → ensembles → submission). |
+| `reports/Etsy_AI_Image_Detection_Analysis.pdf` | Exported report of the analysis. |
+| `figures/comparison_model.png` | Bar chart comparing F1 of every model and ensemble. |
+| `figures/confusion_matrix.png` | Confusion matrix of the best ensemble on the validation set. |
+| `figures/tsne_plot.png` | t-SNE projection of intermediate-CLIP features (class separability). |
+| `figures/fft_comparison.png` | Frequency-domain (FFT) comparison of authentic vs AI images. |
+| `figures/ela_plot.png` | Error Level Analysis visualization of authentic vs AI images. |
+| `figures/model_confidence_analysis.png` | Prediction-confidence distribution of the ensemble. |
 
 ---
 
