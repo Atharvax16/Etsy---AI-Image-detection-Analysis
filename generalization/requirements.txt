@@ -1,0 +1,12 @@
+# Inference-only deps for the generalization harness (Colab already has torch).
+open-clip-torch
+xgboost
+scikit-learn
+joblib
+opencv-python
+pillow
+numpy
+tqdm
+# dataset downloads
+huggingface_hub
+requests
